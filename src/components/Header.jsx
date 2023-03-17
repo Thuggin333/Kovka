@@ -21,6 +21,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { menu } from "../data";
 import MobileNav from "./home/MobileNav";
 import { useNavigate } from "react-router";
+import { buttonStyle } from "./home/Home";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -62,12 +63,19 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+const tabStyle = {
+  Button:{
+    color:'white',
+    fontSize: { xs: "8px", md: "14px", lg: "18px" },
+  }
+}
+
 function Header() {
   const [activeNav, setActiveNav] = useState("Главная");
   const navigate = useNavigate()
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
-  function handelMenuItemClick(item){
+function handelMenuItemClick(item){
     navigate(item.route)
   }
   return (
@@ -106,8 +114,7 @@ function Header() {
                     label={item.name}
                     value={item.name}
                     sx={{
-                      fontSize: { xs: "8px", md: "14px", lg: "18px" },
-                      color: "white",
+                      ...tabStyle.Button
                     }}
                   />
                 ))}
@@ -120,7 +127,7 @@ function Header() {
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
-                placeholder="Search…"
+                placeholder="Поиск.."
                 inputProps={{ "aria-label": "search" }}
               />
             </Search>

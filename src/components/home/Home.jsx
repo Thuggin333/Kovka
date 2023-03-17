@@ -1,6 +1,23 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 
+const buttonStyle = {
+  Button: {
+    "&:hover": {
+      backgroundColor: "#FFDB7F",
+      boxShadow: "none",
+    },
+    "&:active": {
+      boxShadow: "none",
+      backgroundColor: "#FFDB7F",
+    },
+    width: "320px",
+    height: "64px",
+    backgroundColor: "#FFDB7F",
+    color: "black",
+  },
+};
+
 function Home() {
   return (
     <Box
@@ -33,7 +50,7 @@ function Home() {
         </Typography>
         <Button
           sx={{
-            width:"320px",height:'64px', backgroundColor: "#FFDB7F", color: "black",
+            ...buttonStyle.Button,
           }}
           variant="text"
         >

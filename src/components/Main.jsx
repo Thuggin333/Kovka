@@ -3,7 +3,7 @@ import Home from "./home/Home";
 import OurWork from './home/OurWork'
 import Services from './home/Services'
 import Advantage from './home/Advantage'
-import Footer from './home/Footer'
+
 
 
 
@@ -14,7 +14,6 @@ function Main() {
         <OurWork/>
         <Services/>
         <Advantage/>
-        <Footer/>
     </>
   )
 }
