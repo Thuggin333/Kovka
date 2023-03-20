@@ -21,7 +21,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import { menu } from "../data";
 import MobileNav from "./home/MobileNav";
 import { useNavigate } from "react-router";
-import { buttonStyle } from "./home/Home";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -64,24 +63,24 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const tabStyle = {
-  Button:{
-    color:'white',
+  Button: {
+    color: "white",
     fontSize: { xs: "8px", md: "14px", lg: "18px" },
-  }
-}
+  },
+};
 
 function Header() {
   const [activeNav, setActiveNav] = useState("Главная");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
-function handelMenuItemClick(item){
-    navigate(item.route)
+  function handelMenuItemClick(item) {
+    navigate(item.route);
   }
   return (
     <AppBar sx={{ background: "rgba(0, 0, 0, 0.7)", position: "fixed" }}>
       <Toolbar>
-        <Grid container p={2}>
+        <Grid container p={4}>
           <Grid item container xs={12} lg={2}>
             <Grid
               item
@@ -108,13 +107,13 @@ function handelMenuItemClick(item){
                 onChange={(e, value) => setActiveNav(value)}
               >
                 {menu.nav.map((item, id) => (
-                  <Tab 
+                  <Tab
                     onClick={() => handelMenuItemClick(item)}
                     key={`nav${id}`}
                     label={item.name}
                     value={item.name}
                     sx={{
-                      ...tabStyle.Button
+                      ...tabStyle.Button,
                     }}
                   />
                 ))}
