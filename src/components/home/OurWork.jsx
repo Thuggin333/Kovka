@@ -29,7 +29,7 @@ function OurWork() {
             </Typography>
           </Grid>
           <Grid container item spacing={3}>
-            <Grid item xs={3}>
+            <Grid item xs={12} md={6} lg={3}>
               <Item>
                 <img
                   style={{ width: "100%", height: "100%" }}
@@ -38,7 +38,7 @@ function OurWork() {
                 />
               </Item>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={12} md={6} lg={5}>
               <Item>
                 <img
                   style={{ width: "100%", height: "100%" }}
@@ -47,7 +47,7 @@ function OurWork() {
                 />
               </Item>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} md={6} lg={4}>
               <Item>
                 <img
                   style={{ width: "100%", height: "100%" }}
@@ -56,7 +56,7 @@ function OurWork() {
                 />
               </Item>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={12} md={6} lg={5}>
               <Item>
                 <img
                   style={{ width: "100%", height: "100%" }}
@@ -65,7 +65,7 @@ function OurWork() {
                 />
               </Item>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} md={6} lg={3}>
               <Item>
                 <img
                   style={{ width: "100%", height: "100%" }}
@@ -74,7 +74,7 @@ function OurWork() {
                 />
               </Item>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} md={6} lg={4}>
               <Item>
                 <img
                   style={{ width: "100%", height: "100%" }}

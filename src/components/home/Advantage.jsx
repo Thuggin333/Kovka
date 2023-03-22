@@ -34,7 +34,9 @@ function Advantage() {
         maxWidth="xl"
         sx={{
           background: `rgb(0,0,0,0.7)`,
-          
+          display:'flex',
+          justifyContent:'center',
+          borderRadius:'10px'
         }}
       >
         <Grid container p="50px" spacing={5} >

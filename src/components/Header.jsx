@@ -74,17 +74,18 @@ function Header() {
   const navigate = useNavigate();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+  const isLaptop = useMediaQuery(theme.breakpoints.down("xl"));
   function handelMenuItemClick(item) {
     navigate(item.route);
   }
   return (
-    <AppBar sx={{ background: "rgba(0, 0, 0, 0.7)", position: "fixed" }}>
+    <AppBar sx={{ background: "rgba(0, 0, 0, 0.7)", position: "fixed"}}>
       <Toolbar>
         <Grid container p={4}>
           <Grid item container xs={12} lg={2}>
             <Grid
               item
-              xs={2}
+              xs={12}
               lg={12}
               sx={{
                 width: { xs: "100px", lg: "70px" },

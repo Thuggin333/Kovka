@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import useMobile from "../../hooks/useMobile";
 
 const buttonStyle = {
   Button: {
@@ -18,7 +19,9 @@ const buttonStyle = {
   },
 };
 
+
 function Home() {
+  const isMobile = useMobile()
   return (
     <Box
       sx={{
@@ -42,7 +45,7 @@ function Home() {
           padding: "4%",
         }}
       >
-        <Typography sx={{ color: "#FFDB7F" }} variant="h3">
+        <Typography sx={{ color: "#FFDB7F" ,fontSize:{xs:16,sm:18,md:20,lg:24}}} variant="h3">
           ПРОИЗВОДИТЕЛЬ КОВАННЫХ ИЗДЕЛИЙ
         </Typography>
         <Typography sx={{ fontSize: "40px", color: "white" }} variant="p">
