@@ -24,7 +24,7 @@ function MobileNav({ nav }) {
         onClose={() => setOpenDrawer(false)}
         sx={{ width: "300px" }}
       >
-        <List sx={{ width: "300px" }}>
+        <List sx={{ width:{xs:"300px",md:"400px"}}}>
           {nav.map((item,i) => (
             <ListItemButton key={`mobinav${i}`} onClick={() => handelMenuItemClick(item)}>
               <ListItemIcon>

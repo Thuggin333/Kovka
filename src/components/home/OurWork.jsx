@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Container, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -56,7 +57,13 @@ function OurWork() {
                 />
               </Item>
             </Grid>
-            <Grid item sx={{display:{xs:'none',md:'block'}}} xs={12} md={5} lg={5}>
+            <Grid
+              item
+              sx={{ display: { xs: "none", md: "block" } }}
+              xs={12}
+              md={5}
+              lg={5}
+            >
               <Item>
                 <img
                   style={{ width: "100%", height: "100%" }}
@@ -65,7 +72,14 @@ function OurWork() {
                 />
               </Item>
             </Grid>
-            <Grid item sx={{display:{xs:'none',sm:'block'}}} xs={12} sm={6} md={3} lg={3}>
+            <Grid
+              item
+              sx={{ display: { xs: "none", sm: "block" } }}
+              xs={12}
+              sm={6}
+              md={3}
+              lg={3}
+            >
               <Item>
                 <img
                   style={{ width: "100%", height: "100%" }}
@@ -74,7 +88,14 @@ function OurWork() {
                 />
               </Item>
             </Grid>
-            <Grid item sx={{display:{xs:'none',sm:'block'}}} xs={12} sm={6} md={4} lg={4}>
+            <Grid
+              item
+              sx={{ display: { xs: "none", sm: "block" } }}
+              xs={12}
+              sm={6}
+              md={4}
+              lg={4}
+            >
               <Item>
                 <img
                   style={{ width: "100%", height: "100%" }}
@@ -86,7 +107,7 @@ function OurWork() {
           </Grid>
           <Grid item xs={12}>
             <Typography variant="p" sx={{ color: "white" }}>
-              Посмотреть больше
+              {<Link to="/aboutUs">Посмотреть больше</Link>}
             </Typography>
           </Grid>
         </Grid>
