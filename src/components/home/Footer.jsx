@@ -10,7 +10,7 @@ function Footer() {
     <Box sx={{background:'#1B1B1B',padding:'50px'}}>
       <Container maxWidth="xl">
         <Grid container>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Grid container>
               <Grid item xs={12}>
                 <Typography sx={{ color: "white" }}>
@@ -38,8 +38,8 @@ function Footer() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item container xs={6} justifyContent="end">
-            <Grid item>
+          <Grid item container xs={12} md={6} justifyContent="end">
+            <Grid item xs={8} md={4}>
               <img
                 src="https://www.kovka-stroy.ru/_next/static/media/Logo.45bf66d4.svg"
                 alt=""
