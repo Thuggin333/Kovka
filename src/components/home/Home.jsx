@@ -1,6 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
-import useMobile from "../../hooks/useMobile";
 
 const buttonStyle = {
   Button: {
@@ -12,8 +11,8 @@ const buttonStyle = {
       boxShadow: "none",
       backgroundColor: "#FFDB7F",
     },
-    width: "320px",
-    height: "64px",
+    width: {xs:'100%',sm:'80%',md:'40%'},
+    height: {xs:'20%'},
     backgroundColor: "#FFDB7F",
     color: "black",
   },
@@ -21,7 +20,6 @@ const buttonStyle = {
 
 
 function Home() {
-  const isMobile = useMobile()
   return (
     <Box
       sx={{
@@ -38,17 +36,17 @@ function Home() {
         sx={{
           backgroundColor: "rgba(0,0,0,0.7)",
           width: { xs: "70%" },
-          height: "50%",
+          height: {xs:'30%',md:'40%',lg:'50%'},
           display: "flex",
           justifyContent: "space-between",
           flexDirection: "column",
           padding: "4%",
         }}
       >
-        <Typography sx={{ color: "#FFDB7F" ,fontSize:{xs:16,sm:18,md:20,lg:24}}} variant="h3">
+        <Typography sx={{ color: "#FFDB7F" ,fontSize:{xs:16,sm:18,md:20,lg:36,xl:40}}} variant="h3">
           ПРОИЗВОДИТЕЛЬ КОВАННЫХ ИЗДЕЛИЙ
         </Typography>
-        <Typography sx={{ fontSize: "40px", color: "white" }} variant="p">
+        <Typography sx={{ fontSize:{xs:16,sm:18,md:26,lg:36,xl:40}, color: "white" }} variant="p">
           Один из ведущих производителей кованых изделий в Московской области
         </Typography>
         <Button
