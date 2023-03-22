@@ -18,8 +18,8 @@ function CatalogPage() {
       <Grid item xs={8}>
         <Grid container spacing={4}>
           {catalogInfo.catalog.map((item, id) => (
-            <Grid item xs={4} >
-              <Item sx={{height:'500px'}}>
+            <Grid key={`catalog${id}`} item xs={6}sm={6} md={4} lg={4} >
+              <Item sx={{height:{xs:100,sm:150,md:250,lg:400,xl:500}}}>
                 {/* <Typography variant="p">{item.title}</Typography> */}
                 <img src={item.img} alt="img" style={{width:'100%',height:'100%',objectFit:'cover'}}/>
               </Item>
