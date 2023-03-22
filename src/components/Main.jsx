@@ -11,8 +11,8 @@ function Main() {
   return (
     <>
         <Home/>
-        <OurWork/>
         <Services/>
+        <OurWork/>
         <Advantage/>
     </>
   )
