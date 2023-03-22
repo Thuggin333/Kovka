@@ -72,7 +72,7 @@ function Price() {
             {price.priceInfo.map((item, id) => {
               return (
                 <>
-                  <Typography color={"white"} variant="h5">
+                  <Typography key={`priceTitle${id}`} sx={{color:{xs:'#FFDB7F',md:'white'}}} variant="h5">
                     {item.title}
                   </Typography>
                 </>
@@ -83,7 +83,7 @@ function Price() {
             {price.priceInfo.map((item, id) => {
               return (
                 <>
-                  <Typography color={"white"} variant="h5">
+                  <Typography key={`price${id}`} color={"white"} variant="h5">
                     {item.price}
                   </Typography>
                 </>

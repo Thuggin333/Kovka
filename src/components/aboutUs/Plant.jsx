@@ -16,17 +16,18 @@ function Plant() {
       <Container
         sx={{
           backgroundColor: `rgba(0, 0, 0, 0.7)`,
-          height: "350px",
+          width:{xs:"80%"},
+          height: {xs:"80%"},
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
           borderRadius: "10px",
         }}
       >
-        <Typography color={"#FFDB7F"} variant="h2">
+        <Typography color={"#FFDB7F"}sx={{fontSize:{xs:16,sm:18,md:20,lg:36,xl:40}}} variant="h2">
           ОБОРУДОВАНИЕ
         </Typography>
-        <Typography color={"white"} variant="p">
+        <Typography sx={{fontSize:{xs:16,sm:18,md:20,lg:26,xl:26}}}  color={"white"} variant="p">
           Мы любим металл, и он отвечает нам взаимностью, только так можно
           создавать поистине достойные вещи. Каждый заказ индивидуален. В
           галерее художественной ковки представлены разные по сложности и цене

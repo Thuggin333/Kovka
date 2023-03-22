@@ -17,18 +17,18 @@ function AboutUsPage() {
       <Box
         sx={{
           backgroundColor: "rgba(0,0,0,0.7)",
-          width: { xs: "70%" },
-          height: "50%",
+          width:{xs:"80%"},
+          height: {xs:"60%"},
           display: "flex",
           justifyContent: "space-evenly",
           flexDirection: "column",
           padding: "4%",
         }}
       >
-        <Typography sx={{ color: "#FFDB7F" }} variant="h3">
+        <Typography sx={{ color: "#FFDB7F",fontSize:{xs:16,sm:18,md:20,lg:36,xl:40} }} variant="h3">
           О НАС
         </Typography>
-        <Typography sx={{ fontSize: "20px", color: "white" }} variant="p">
+        <Typography sx={{ fontSize:{xs:16,sm:18,md:22,lg:26,xl:30}, color: "white" }} variant="p">
           У нас Вы можете Заказать оригинальные кованые изделия, которые помогут
           создать красиво неповторимые интерьеры и экстерьеры. Наличие
           собственной производственного цеха позволяет принимать заказы на
